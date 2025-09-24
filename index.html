@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keypad Calculator</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+<body class="bg-indigo-950 h-screen">
+    <!--KeyPad Calculator On Desktop-->
+    <div class="hidden md:block pt-20 pl-100">
+        <!--Calculator Layout-->
+            <div class="border border-white w-120 rounded-3xl h-130 px-10 py-8">
+                <!--Input Field-->
+            <input type="text" id="display" class="border rounded-2xl border-white bg-indigo-950 text-white w-100 h-16" disabled>
+          <!--Numbers Keyboard-->
+        <div class="mt-10 border border-white w-100 h-90 rounded-2xl px-4 py-6">
+            <!--Grids Row-->
+            <div class="grid grid-rows-5 gap-8 font-mono">
+                <!--1st Row-->
+                <div class="text-blue-950 text-2xl">
+                    <button class="bg-white rounded w-20 h-10">7</button>
+                    <button class="bg-white rounded w-20 h-10">8</button>
+                    <button class="bg-white rounded w-20 h-10">9</button>
+                    <button class="Del bg-red-700 text-white active:bg-red-950 rounded w-20 h-10">Del</button>
+                </div>
+                <!--2nd Row-->
+                 <div class="text-blue-950 text-2xl">
+                    <button class="bg-white rounded w-20 h-10">4</button>
+                    <button class="bg-white rounded w-20 h-10">5</button>
+                    <button class="bg-white rounded w-20 h-10">6</button>
+                    <button class="bg-white rounded w-20 h-10">+</button>
+                </div> 
+                <!--3rd Row-->
+                  <div class="text-blue-950 text-2xl">
+                    <button class="bg-white rounded w-20 h-10">1</button>
+                    <button class="bg-white rounded w-20 h-10">2</button>
+                    <button class="bg-white rounded w-20 h-10">3</button>
+                    <button class="Del bg-white w-20 h-10">-</button>
+                </div>
+               <!--4th Row-->
+                 <div class="text-blue-950 text-2xl">
+                    <button class="bg-white rounded w-20 h-10">.</button>
+                    <button class="bg-white rounded w-20 h-10">0</button>
+                    <button class="bg-white rounded w-20 h-10">/</button>
+                    <button class="bg-white rounded w-20 h-10">*</button>
+                </div> 
+                <!--5th Row-->
+                  <div class="text-blue-950 text-2xl">
+  <button class="eraseAll bg-red-700 text-white active:bg-red-950 rounded w-28 h-10">Clear</button>
+                    <button class="equal bg-green-700 text-white active:bg-green-950 rounded w-28 h-10">=</button>
+                    <button onclick="resetCalculator" class="bg-red-700 text-white active:bg-red-950 rounded w-28 h-10">Reset</button>
+                </div>
+            </div>
+
+        </div>
+            </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
