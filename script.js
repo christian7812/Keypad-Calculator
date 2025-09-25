@@ -130,7 +130,7 @@ buttons.forEach(button=> {
         function operation(a,b,op) {
             switch(op) {
                 case"+": return a + b;
-                case"-": return a- b;
+                case"-": return a - b;
                 case"*": return a * b;
                 case"/": return b !== 0 ? a / b : "Syntax Error";
                 default: return b;
