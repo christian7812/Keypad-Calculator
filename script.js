@@ -106,7 +106,9 @@ buttons.forEach(button=> {
         //Operator Button
         else if(["+","-","*","/"].includes(outcome)) {
             if(currentNum !== "") {
+                if(firstNum === null) {
              firstNum = parseFloat(currentNum);
+                }
             } else if(operators) {
             firstNum = operation(firstNum,parseFloat(currentNum),operators);
             displayInput.value = firstNum;
